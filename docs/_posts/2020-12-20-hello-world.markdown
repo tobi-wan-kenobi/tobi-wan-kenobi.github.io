@@ -2,7 +2,9 @@
 layout: post
 title:  "Hello, world!"
 date:   2020-12-20 10:28:44 +0100
-categories: private
+author: tobi-wan-kenobi
+categories: misc
+tags: first-post
 ---
 
 First post :P

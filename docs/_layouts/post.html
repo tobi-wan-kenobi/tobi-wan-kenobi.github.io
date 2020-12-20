@@ -23,6 +23,13 @@ layout: default
             <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
             {%- if forloop.last == false %}, {% endif -%}
         {% endfor %}
+		{% if page.categories.size > 0 %}
+		 in <i>{{ page.categories | sort | join: ", " }}</i>
+		{%- endif -%}
+		{% if page.tags.size > 0 %}
+		<br />Tag{% if page.tags.size > 1 %}s{% endif %}: {{ page.tags | sort | join: ", " }}
+		{%- endif -%}
+
       {%- endif -%}</p>
   </header>
 
