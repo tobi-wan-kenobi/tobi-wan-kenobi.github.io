@@ -140,7 +140,7 @@ EOF
 cat <<EOF >> /etc/dracut.conf.d/10-crypt.conf
 install_items+=" /boot/volume.key /etc/crypttab "
 EOF
-echo 'add_dracutmodules+="crypt btrfs resume"' >> /etc/dracut.conf
+echo 'add_dracutmodules+="crypt btrfs lvm resume"' >> /etc/dracut.conf
 echo 'tmpdir=/tmp' >> /etc/dracut.conf
 dracut --force --hostonly --kver 5.4.26_1
 mkdir /boot/grub
